@@ -49,7 +49,7 @@ def main():
             action = input(
                             "Enter 1 if you want create cafe\n"
                             "Enter 2 if you want update cafe\n"
-                            "Enter 3 get info cafe\n"
+                            "Enter 3 get info cafe\n "
                         )
             if action == '1':
                 create_cafe(cafe_id=CAFE_ID)
