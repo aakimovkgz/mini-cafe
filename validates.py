@@ -37,10 +37,6 @@ def validate_work_days(work_days: str) -> bool:
     days = work_days.split(',')
     all_exist = all([day in EXAMPLE for day in days])
     return all_exist
-    # all_exist = []
-    # for day in days:
-    #     all_exist.append(day in EXAMPLE)
-    # return all(all_exist)
     
     
 def validate_percent(percent: float) -> bool:
@@ -52,9 +48,6 @@ def validate_percent(percent: float) -> bool:
 def validate_cafe_status(status: str, EXAMPLE: dict) -> bool:
     keys = EXAMPLE.keys()
     return status in keys
-    # if status in keys:
-    #     return True
-    # return False
 
 
 def validate_update_time(time, create_time):
